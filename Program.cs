@@ -126,11 +126,11 @@ namespace Homework_Theme_03
             userName1 = Console.ReadLine();
             
             // проверяем кто 2й игрок: человек или компьютер
-            if (addPcGamer = true)
+            if (addPcGamer == true)
             {
                 userName2 = "Компьютер";
             }
-            if (addPcGamer = false)
+            if (addPcGamer == false)
             {
                 Console.WriteLine("Введите имя второго игрока");
                 userName2 = Console.ReadLine();
@@ -191,7 +191,7 @@ namespace Homework_Theme_03
                 if (moveNumber % 2 == 0 && corScore > 0)
                 {
                     // если играете с компом то далее все автоматичемки
-                    if (addPcGamer = true)
+                    if (addPcGamer == true)
                     {
                         Console.WriteLine($"Текущий счет  - {corScore}"); // озвучиваем текущий счет
                         corUserName = "Компьютер"; // переопеределем текущего игрока
@@ -199,7 +199,7 @@ namespace Homework_Theme_03
                         inputTrow = Throw.Next(1, maxThrow + 1);
                     }
                     // если играете с 2м игроком, то необходимо проверить вводимые данные
-                    if (addPcGamer = false)
+                    if (addPcGamer == false)
                     {
                         Console.WriteLine($"Текущий счет  - {corScore}"); // озвучиваем текущий счет
                         corUserName = userName2; // переопеределем текущего игрока
